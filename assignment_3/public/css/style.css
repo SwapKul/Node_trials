@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header__list {
+    list-style: none;
+    background-color: #8071d5;
+    margin: 0;
+    display: flex;
+}
+
+.main-header__list-item {
+    padding: 1rem 1.5rem;
+}
+
+.main-header__list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.main-header__list a:hover,
+.main-header__list a.active {
+    color: #320e6c;
+}
+
+main {
+    padding: 1rem;
+}
