@@ -1,0 +1,15 @@
+{
+  "name": "route_trial",
+  "version": "1.0.0",
+  "description": "trial for creating routes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "troglodyte",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
