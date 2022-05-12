@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        block styles
+    body 
+        header.main-header
+            .main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a(href="/", class=(path === '/' ? 'active' : '')) Home
+                    li.main-header__item
+                        a(href="/contact-us", class=(path === '/contact-us' ? 'active' : '')) Contact Us 
+                    li.main-header__item 
+                        a(href="/user-info", class=(path === '/user-info' ? 'active' : '')) User Info
+                ul.main-header__search-nav
+                    li
+                        input( type="text" placeholder="Enter keywords to search")
+                    li
+                        button(type="submit") Search
+        block content 

@@ -1,0 +1,25 @@
+extends layouts/main-layout.pug
+
+block content 
+    main
+        .main-box
+            if information.length > 0
+                each info in information
+                    .main-box__block
+                        .main-box__item-box
+                            span.main-box__item Query Number : 
+                            span.main-box__item #{information.indexOf(info)+1}
+                        .main-box__item-box 
+                            span.main-box__item Name :
+                            span.main-box__item #{info.name}
+                        .main-box__item-box 
+                            span.main-box__item E-mail :
+                            span.main-box__item #{info.email}
+                        .main-box__item-box 
+                            span.main-box__item Number :
+                            span.main-box__item #{info.contact}
+                        .main-box__item-box 
+                            span.main-box__item User ID :
+                            span.main-box__item #{info.uid}
+            else 
+                p No user found!!
