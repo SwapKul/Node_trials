@@ -4,9 +4,13 @@ const express = require('express');
 const router = express.Router();
 
 const rootDir = require('../utils/path');
+const contactData = require('./contact-us');
+
+const info = []
 
 router.get('/user-info', (req, res, next) => {
-    res.sendFile(path.join(rootDir, 'views', 'user-info.html'))
+    const info = contactData.info;
+    res.render('user-info', {information: info, pageTitle: 'User Info', path: '/user-info'})
 });
 
 module.exports = router;
